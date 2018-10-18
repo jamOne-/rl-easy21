@@ -20,7 +20,7 @@ def step(state, action):
   reward = 0
   terminal = False
 
-  if action == 'h' or action == 'hit':
+  if action == 'h' or action == 'hit' or action == 1:
     color, value = draw_card()
     player += color * value
     player_busted = is_busted(player)
@@ -28,7 +28,7 @@ def step(state, action):
     reward = -1 if player_busted else 0
     terminal = player_busted
 
-  elif action == 's' or action == 'stick':
+  elif action == 's' or action == 'stick' or action == 0:
     while dealer > 0 and dealer < DEALER_STICK_AT:
       color, value = draw_card()
       dealer += color * value
