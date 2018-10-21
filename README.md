@@ -3,4 +3,4 @@ My solutions to [Easy21 assignment](http://www0.cs.ucl.ac.uk/staff/d.silver/web/
 
 ## Monte Carlo
 Optimal value function V*(s) calculated with Monte Carlo agent running 100 000 episodes.
-![V* Monte Carlo](montecarlo.png)
+![V* Monte Carlo](plots/montecarlo.png)
